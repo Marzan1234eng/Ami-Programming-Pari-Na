@@ -1,0 +1,33 @@
+:root {
+    --blue: #005BEA;
+    --skyblue: #74BCF8;
+    --white: #ffffff;
+    --yellow: #FFD607;
+    --black: #000000;
+}
+
+.header{
+    background-color: #005bea;
+    margin-top: 100px !important;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 20px #74bcf8;
+    color: white;
+}
+
+.submit-btn{
+    margin-right: 10px
+}
+
+.bg-msg{
+    background-color: var(--skyblue);
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: var(--white);
+    width: 90%;
+}
+
+.search-form{
+    margin-top: 100px;
+}
