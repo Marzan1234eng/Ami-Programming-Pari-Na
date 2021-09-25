@@ -1,7 +1,8 @@
 Kindy follow the instruction to run the project.
 
 1. After Download the file import code_pari_na.sql in your database
-2. Open the project
+2. Save the project in C:\xampp\htdocs
+3. Open the project in any browser http://localhost/Ami-Programming-Pari-Na-main/
 3. Register yourself first
 4. Then Login 
 5. You have to give input & search value then submit khoj
