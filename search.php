@@ -1,7 +1,11 @@
 <?php
-include "include/header.php";
+session_start();
+if (isset($_SESSION["username"])){
+    include "include/header.php";
 ?>
-
+<div class="log-out">
+    <button class="btn btn-primary"><a class="logout-btn" href="include/logout.php">Log Out</a></button>
+</div>
 <div class="row search-form">
     <div class="offset-md-4 col-md-4">
         <form class="input-form" method="" action="">
@@ -41,18 +45,19 @@ include "include/header.php";
         const node = document.createTextNode(result);
         const resValue = document.getElementById("result");
         resValue.innerHTML = result;
-        console.log("stringValue: ",newSort," searchValue: ",searchValue, "Result: ",result);
+        //console.log("stringValue: ",newSort," searchValue: ",searchValue, "Result: ",result);
 
         let http = new XMLHttpRequest();
         http.open("POST", "include/search-db.php");
         http.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
         http.send(JSON.stringify({"inputString": newSort, "searchValue": searchValue}));
-
     }
 
 </script>
 
 <?php
 include "include/footer.php";
+}else{
+    header("Location: ./index.php");
+}
 ?>
-

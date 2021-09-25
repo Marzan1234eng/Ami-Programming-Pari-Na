@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 include "connection.php";
 
 $username = $_POST['username'];
@@ -10,6 +10,8 @@ $sql = "SELECT * FROM `register` WHERE `username` = '{$username}' AND `password`
 $result = $conn->query($sql);
 
 if($result->num_rows == 1){
+    $row = $result->fetch_assoc();
+    $_SESSION["username"] = $row["username"];
     header("location:../search.php?");
 }
 else{

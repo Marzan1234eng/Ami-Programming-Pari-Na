@@ -1,4 +1,6 @@
-<?php include "include/header.php"?>
+<?php
+include "include/header.php"
+?>
 
 <div>
     <div class="row">
@@ -32,7 +34,7 @@
                     <input type="password" name="confirmPassword" class="form-control" id="exampleInputPassword1">
                 </div>
                 <button type="submit" class="btn btn-success submit-btn">Register</button>
-                <button type="button" onclick="document.location.href='index.php'" class="btn btn-primary">Cancel</button>
+                <button type="button" onclick="document.location.href='index.php'" class="btn btn-primary">Sign In</button>
             </form>
         </div>
     </div>

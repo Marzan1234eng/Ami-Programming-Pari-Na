@@ -15,6 +15,14 @@
     color: white;
 }
 
+.logout-btn{
+    color: white;
+    text-decoration: none;
+}
+.logout-btn:hover{
+    color: white;
+}
+
 .submit-btn{
     margin-right: 10px
 }
